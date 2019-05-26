@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Understanding Viewport</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/*Divide webpage in grid layout with 12 columns and as many number of rows as developer wants*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* box-sizing Tell the browser that all elements are in form of block*/    
+* {box-sizing: border-box;}
+
+
+/* for all columns [col-1 to col-12] set border and padding*/
+[class*="col-"] {float: left;
+  padding: 15px;
+  border: 1px solid red;}
+
+
+/* create CSS for list shown on left side*/
+.listoption 
+{width:25%;
+ float:left; 
+ list-style-type: none;
+ border: none; 
+ border-color: green;
+}
+
+/* create CSS for list items shown on left side*/
+.lioption
+{padding: 8px;
+  margin-bottom: 7px;
+  background-color: purple;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/* create CSS for list items when mouse is hovered on them*/
+.lioption:hover 
+{  background-color: cyan;
+   color:black;
+}
+
+
+/* create CSS for Text shown on right*/
+.textoption 
+{width:75%;
+ float:left; 
+ border: none; 
+}
+
+/*create CSS for main heading*/
+.newh1 {text-align:center;}
+
+</style>
+
+</head>
+<body>
+<h1 class="newh1 col-12">The Jungle Book Summary</h1>
+<div class="col-12">
+<ul class="listoption col-3">
+    <li class="lioption">Our Hero Mogli</li>
+    <li class="lioption">Black Character Bagieera</li>
+    <li class="lioption">Fat Character Bhaloo</li>
+    <li class="lioption">Red Character Panda</li>
+    <li class="lioption">Girl Character Radha</li>
+    <li class="lioption">Anti-Hero Character Sher Khan</li>
+    <li class="lioption">Longest Character Kaa</li>
+    <li class="lioption">Friends of Sher Khan Monkey and Tabaki</li>
+    <li class="lioption">Friends of Mogli wolves</li>
+    <li class="lioption">Family of Mogli Akdu, Pakdu, Raksha and Akela</li>
+</ul>
+<div class="textoption col-9" >
+<p align="justify">The Jungle Book (1894) is a collection of stories by the English author Rudyard Kipling. Most of the characters are animals such as Shere Khan the tiger and Baloo the bear, though a principal character is the boy or "man-cub" Mowgli, who is raised in the jungle by wolves. The stories are set in a forest in India; one place mentioned repeatedly is "Seonee" (Seoni), in the central state of Madhya Pradesh.</p>
+<p align="justify">A major theme in the book is abandonment followed by fostering, as in the life of Mowgli, echoing Kipling's own childhood. The theme is echoed in the triumph of protagonists including Rikki-Tikki-Tavi and The White Seal over their enemies, as well as Mowgli's. Another important theme is of law and freedom; the stories are not about animal behaviour, still less about the Darwinian struggle for survival, but about human archetypes in animal form. They teach respect for authority, obedience, and knowing one's place in society with "the law of the jungle", but the stories also illustrate the freedom to move between different worlds, such as when Mowgli moves between the jungle and the village. Critics have also noted the essential wildness and lawless energies in the stories, reflecting the irresponsible side of human nature.</p>
+<p align="justify">The Jungle Book has remained popular, partly through its many adaptations for film and other media. Critics such as Swati Singh have noted that even critics wary of Kipling for his supposed imperialism[1] have admired the power of his storytelling.[1] The book has been influential in the scout movement, whose founder, Robert Baden-Powell, was a friend of Kipling's.[2] Percy Grainger composed his Jungle Book Cycle around quotations from the book.</p>           
+<p style="background-color: red;"> <h3 style="background-color: red;">Ask students to open this page on mobile and they will understand need of media query</h3></p>
+</div>
+</div>
+</body>
+</html>
